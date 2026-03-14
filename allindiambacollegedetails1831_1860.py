@@ -168,7 +168,10 @@ def scrape_college_info(driver,URLS):
     except Exception as e:
         pass
     # ================= COLLEGE NAME =================
-    wait.until(EC.presence_of_element_located((By.TAG_NAME, "h1")))
+    try:
+        wait.until(EC.presence_of_element_located((By.TAG_NAME, "h1")))
+    except:
+        pass
     data["college_info"]["college_name"] = driver.find_element(By.TAG_NAME, "h1").text.strip()
 
     # ================= LOCATION + CITY =================
