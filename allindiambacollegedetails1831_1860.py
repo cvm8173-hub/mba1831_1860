@@ -15,26 +15,26 @@ from selenium.common.exceptions import TimeoutException
 
 # ---------------- URLS ----------------
 BASE_URL = [
-  "https://www.shiksha.com/university/shubham-university-bhopal-213359",
-  "https://www.shiksha.com/college/c-n-k-reddy-college-of-business-management-indiranagar-bangalore-3038",
-  "https://www.shiksha.com/college/avanthi-s-st-theressa-institute-of-engineering-and-technology-vizianagaram-23017",
-  "https://www.shiksha.com/college/oasis-college-of-science-and-management-undri-pune-24536",
-  "https://www.shiksha.com/college/sunder-deep-college-of-management-and-technology-ghaziabad-25056",
-  "https://www.shiksha.com/college/msnimt-member-sree-narayana-pillai-institute-of-management-and-technology-kerala-other-25289",
-  "https://www.shiksha.com/college/csr-center-of-excellence-mysore-36423",
-  "https://www.shiksha.com/college/marwadi-education-foundation-s-group-of-institutions-mefgi-rajkot-37142",
-  "https://www.shiksha.com/college/mjrp-college-of-corporate-management-mjrp-ccm-jaipur-40459",
-  "https://www.shiksha.com/college/royal-institute-of-technology-and-science-ranga-reddy-46597",
-  "https://www.shiksha.com/college/maxx-academy-faridabad-48763",
-  "https://www.shiksha.com/college/shree-samanvay-institute-of-business-administration-botad-69211",
-  "https://www.shiksha.com/college/sir-c-r-reddy-college-eluru-112799",
-  "https://www.shiksha.com/college/alpine-institute-of-paramedical-science-dehradun-116497",
-  "https://www.shiksha.com/college/vikramaditya-group-of-institutions-bhopal-117483",
-  "https://www.shiksha.com/college/satyam-international-institute-of-technology-patna-146503",
-  "https://www.shiksha.com/college/academy-of-management-bhopal-147495",
-  "https://www.shiksha.com/college/institute-of-management-sciences-gajraula-uttar-pradesh-other-180069",
-  "https://www.shiksha.com/college/sunstone-patel-institute-of-management-studies-bellandur-bangalore-205095",
-  "https://www.shiksha.com/college/kopal-institute-of-management-studies-bhopal-210185",
+  "https://www.shiksha.com/college/kite-kautilya-institute-of-technology-and-engineering-jaipur-28002",
+  "https://www.shiksha.com/college/banshi-group-of-institutions-kanpur-30490",
+  "https://www.shiksha.com/college/aurous-institute-of-management-aim-lucknow-32762",
+  "https://www.shiksha.com/college/shivdan-singh-institute-of-technology-and-management-aligarh-34609",
+  "https://www.shiksha.com/college/malineni-perumallu-educational-society-s-group-of-institutions-guntur-49400",
+  "https://www.shiksha.com/college/excellency-group-of-institutions-alwal-hyderabad-51858",
+  "https://www.shiksha.com/college/jp-institute-of-management-meerut-52761",
+  "https://www.shiksha.com/college/intech-institute-of-business-management-kanakapura-road-bangalore-54293",
+  "https://www.shiksha.com/college/rsr-rungta-college-of-engineering-and-technology-bhilai-59027",
+  "https://www.shiksha.com/college/kandula-obul-reddy-memorial-college-of-engineering-kadapa-60566",
+  "https://www.shiksha.com/college/sri-sai-college-of-it-and-management-kadapa-62403",
+  "https://www.shiksha.com/college/ktkm-science-college-kalol-145555",
+  "https://www.shiksha.com/college/dgim-law-college-faridabad-146623",
+  "https://www.shiksha.com/college/ch-mohd-koya-memorial-college-for-advanced-studies-thiruvananthapuram-147053",
+  "https://www.shiksha.com/college/radiant-institute-of-management-jabalpur-147235",
+  "https://www.shiksha.com/college/environment-protection-training-and-research-institute-ranga-reddy-148551",
+  "https://www.shiksha.com/college/avviare-educational-hub-noida-151643",
+  "https://www.shiksha.com/college/daly-college-of-business-management-indore-155009",
+  "https://www.shiksha.com/college/symbiosis-centre-for-corporate-education-symbiosis-international-pune-senapati-bapat-road-155189",
+  "https://www.shiksha.com/college/vidya-devi-college-of-management-gwalior-157057",
 ]
 
 
@@ -9242,7 +9242,7 @@ def parse_faq_scholarships_section(driver, URLS):
 def scrape_mba_colleges():
     driver = create_driver()
     all_data = []
-    c_count =2371
+    c_count =2431
 
     try:
         for base_url in BASE_URL:
