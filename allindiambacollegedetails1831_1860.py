@@ -170,9 +170,9 @@ def scrape_college_info(driver,URLS):
     # ================= COLLEGE NAME =================
     try:
         wait.until(EC.presence_of_element_located((By.TAG_NAME, "h1")))
+        data["college_info"]["college_name"] = driver.find_element(By.TAG_NAME, "h1").text.strip()
     except:
         pass
-    data["college_info"]["college_name"] = driver.find_element(By.TAG_NAME, "h1").text.strip()
 
     # ================= LOCATION + CITY =================
     loc = driver.find_element(By.CSS_SELECTOR, "span.f90eb6").text
